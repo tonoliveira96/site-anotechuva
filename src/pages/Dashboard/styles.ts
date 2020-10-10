@@ -37,19 +37,30 @@ export const HeaderSite = styled.div`
   height: 600px;
   width: 100%;
   display: flex;
+  flex-direction: row;
+`;
 
+export const ContainerApp = styled.div`
+  display: flex;
+  width: 50%;
+  height: 700px;
+  justify-content: center;
+  padding-top: 70px;
 
-  div{
-    width: 50%;
-    height: 700px;
-    background: #CCD5F2;
-    margin-left: auto;
+  img {
+    height: 500px;  
   }
+`;
+
+export const ContainerDownload = styled.div`
+  display: flex;
+  width: 50%;
+  height: 700px;
+  align-items: center;
+  background: #ccd5f2;
 
   @media (max-width: 640px) {
-    div{
-      display: none;
-    }
+    display: none;
   }
 `;
 
