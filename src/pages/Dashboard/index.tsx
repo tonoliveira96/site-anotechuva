@@ -2,6 +2,8 @@ import React from 'react';
 
 import Celular from '../../assets/celular-front.png';
 
+import GooglePlay from '../../assets/google-play.png';
+
 // import { FiArrowRight, FiInstagram } from 'react-icons/fi';
 // import { Link } from 'react-router-dom';
 // import api from '../../services/api';
@@ -19,7 +21,14 @@ const Dashboard: React.FC = () => {
   return (
     <>
       <Title>
-        ANOTE CHUVA
+        <p>
+          <span>ANOTE</span>CHUVA
+        </p>
+
+        <ul>
+          <li>Sobre</li>
+          <li>Contato</li>
+        </ul>
         <a href="/">Entrar</a>
       </Title>
 
@@ -28,12 +37,22 @@ const Dashboard: React.FC = () => {
           <img src={Celular} alt="Celular" />
         </ContainerApp>
 
-        <ContainerDownload
-          
-        ></ContainerDownload>
+        <ContainerDownload>
+          <span>Download disponível em breve</span>
+          <img src={GooglePlay} alt="GooglePlay" />
+        </ContainerDownload>
       </HeaderSite>
 
-      <AboutMe></AboutMe>
+      <AboutMe>
+        <hr />
+        <h2>Sobre</h2>
+        <p>
+          Lorem Ipsum é simplesmente um texto fictício da indústria de impressão
+          e composição. Lorem Ipsum tem sido o texto fictício padrão da
+          indústria desde os anos 1500, quando um impressor desconhecido pegou
+          uma galé do tipo e embaralhou para fazer um livro de amostra de tipos.
+        </p>
+      </AboutMe>
     </>
   );
 };

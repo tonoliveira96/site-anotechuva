@@ -4,14 +4,31 @@ import { shade } from 'polished';
 export const Title = styled.h1`
   display: flex;
   font-size: 42px;
-  color: #f0f0f5;
-  background: #18172a;
+  font-weight: bold;
+  color: #18172a;
+  /* background: #18172a; */
   position: absolute;
   width: 100%;
   z-index: 2;
 
   justify-content: space-between;
   padding: 10px 50px;
+
+  p span{
+    color: #0049b7;
+  }
+
+  ul{
+    list-style: none;
+    padding-left: 50px;
+
+    li {
+      display: inline;
+      padding-left: 30px;
+      font-size: 20px;
+      color: #18172a;
+    }
+  }
 
   a {
     text-decoration: none;
@@ -34,33 +51,53 @@ export const Title = styled.h1`
 `;
 
 export const HeaderSite = styled.div`
-  height: 600px;
+  height: 700px;
   width: 100%;
   display: flex;
-  flex-direction: row;
+  flex: 1;
+  background: #ccd5f2;
+
+  @media (max-width: 640px) {
+    flex-direction: column;
+
+    div{
+      width: 100%;
+    }
+
+  }
 `;
 
 export const ContainerApp = styled.div`
   display: flex;
-  width: 50%;
   height: 700px;
+  margin-left: auto;
   justify-content: center;
   padding-top: 70px;
 
   img {
-    height: 500px;  
+    height: 500px; 
   }
+
 `;
 
 export const ContainerDownload = styled.div`
   display: flex;
+  margin-left: auto;
   width: 50%;
   height: 700px;
   align-items: center;
-  background: #ccd5f2;
+  justify-content: center;
+  flex-direction: column;
+  background: #fff;
 
-  @media (max-width: 640px) {
-    display: none;
+  span{
+    font-size:24px;
+    font-weight: bold;
+    padding: 30px;
+  }
+
+  img{
+    width: 200px;
   }
 `;
 
@@ -70,12 +107,12 @@ export const AboutMe = styled.div`
   position: relative;
   z-index: 2;
   h2 {
-    color: #3a3a3a;
+    color: #18172a;
   }
 
   p {
     display: flex;
-    padding: 10px 24px;
+    padding: 10px 30px;
     font-size: 16px;
     text-align: justify;
   }
@@ -153,3 +190,4 @@ export const Contact = styled.div`
     color: ${shade(0.8, '#fff')};
   }
 `;
+
