@@ -14,6 +14,7 @@ import {
   ContainerApp,
   ContainerDownload,
   AboutMe,
+  Footer,
 } from './styles';
 
 const Dashboard: React.FC = () => {
@@ -53,6 +54,12 @@ const Dashboard: React.FC = () => {
           uma galé do tipo e embaralhou para fazer um livro de amostra de tipos.
         </p>
       </AboutMe>
+      <Footer>
+        <p>
+        Desenvolvido  por <a href="https://www.linkedin.com/in/tonoliveira96/" target="_blank"> Everton Oliveira</a>
+        </p>
+       
+      </Footer>
     </>
   );
 };

@@ -191,3 +191,26 @@ export const Contact = styled.div`
   }
 `;
 
+export const Footer = styled.div`
+  display: flex;
+  height: 200px;
+  background: #18172a;
+  position: relative;
+  justify-content: center;
+  
+  p {
+    padding: 10px 30px;
+    font-size: 16px;
+    text-align: justify;
+    color: #fff;
+
+    a{
+    padding-left: 5px;
+    text-decoration: none;
+    color: #0049b7;
+    font-weight: bold;
+  }
+
+  }
+`;
+
