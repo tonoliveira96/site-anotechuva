@@ -56,7 +56,7 @@ const Dashboard: React.FC = () => {
       </AboutMe>
       <Footer>
         <p>
-        Desenvolvido  por <a href="https://www.linkedin.com/in/tonoliveira96/" target="_blank"> Everton Oliveira</a>
+        Desenvolvido  por <a href="https://www.linkedin.com/in/tonoliveira96/" target="blank"> Everton Oliveira</a>
         </p>
        
       </Footer>
