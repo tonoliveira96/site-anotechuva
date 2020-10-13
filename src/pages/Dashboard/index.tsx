@@ -26,10 +26,6 @@ const Dashboard: React.FC = () => {
           <span>ANOTE</span>CHUVA
         </p>
 
-        <ul>
-          <li>Sobre</li>
-          <li>Contato</li>
-        </ul>
         <a href="/">Entrar</a>
       </Title>
 
@@ -45,7 +41,6 @@ const Dashboard: React.FC = () => {
       </HeaderSite>
 
       <AboutMe>
-        <hr />
         <h2>Sobre</h2>
         <p>
           Lorem Ipsum é simplesmente um texto fictício da indústria de impressão
@@ -56,9 +51,12 @@ const Dashboard: React.FC = () => {
       </AboutMe>
       <Footer>
         <p>
-        Desenvolvido  por <a href="https://www.linkedin.com/in/tonoliveira96/" target="blank"> Everton Oliveira</a>
+          Desenvolvido por{' '}
+          <a href="https://www.linkedin.com/in/tonoliveira96/" target="blank">
+            {' '}
+            Everton Oliveira
+          </a>
         </p>
-       
       </Footer>
     </>
   );

@@ -3,32 +3,22 @@ import { shade } from 'polished';
 
 export const Title = styled.h1`
   display: flex;
+  width: 100vw;
   font-size: 42px;
-  font-weight: bold;
+  font-weight: 800;
   color: #18172a;
   /* background: #18172a; */
   position: absolute;
-  width: 100%;
   z-index: 2;
 
+  align-items: center;
   justify-content: space-between;
   padding: 10px 50px;
 
-  p span{
+  p span {
     color: #0049b7;
   }
 
-  ul{
-    list-style: none;
-    padding-left: 50px;
-
-    li {
-      display: inline;
-      padding-left: 30px;
-      font-size: 20px;
-      color: #18172a;
-    }
-  }
 
   a {
     text-decoration: none;
@@ -45,66 +35,62 @@ export const Title = styled.h1`
   }
 
   @media (max-width: 640px) {
-    font-size: 24px;
+    font-size: 20px;
     padding: 10px 30px;
   }
 `;
 
 export const HeaderSite = styled.div`
-  height: 700px;
-  width: 100%;
   display: flex;
-  flex: 1;
+  width: 100vw;
   background: #ccd5f2;
 
   @media (max-width: 640px) {
     flex-direction: column;
 
-    div{
+    div {
       width: 100%;
     }
-
   }
 `;
 
 export const ContainerApp = styled.div`
   display: flex;
-  height: 700px;
   margin-left: auto;
   justify-content: center;
   padding-top: 70px;
 
   img {
-    height: 500px; 
+    height: 500px;
   }
-
 `;
 
 export const ContainerDownload = styled.div`
   display: flex;
   margin-left: auto;
   width: 50%;
-  height: 700px;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background: #fff;
+  background: #ccd5f2;
+  padding-top: 50px;
 
-  span{
-    font-size:24px;
+  span {
+    font-size: 24px;
     font-weight: bold;
-    padding: 30px;
   }
 
-  img{
+  img {
     width: 200px;
   }
 `;
 
 export const AboutMe = styled.div`
-  height: 200px;
+  flex: 1;
+  width: 100vw;
   background: #fff;
   position: relative;
+  padding: 30px 30px;
   z-index: 2;
   h2 {
     color: #18172a;
@@ -112,7 +98,6 @@ export const AboutMe = styled.div`
 
   p {
     display: flex;
-    padding: 10px 30px;
     font-size: 16px;
     text-align: justify;
   }
@@ -192,25 +177,22 @@ export const Contact = styled.div`
 `;
 
 export const Footer = styled.div`
-  display: flex;
-  height: 200px;
+  flex: 1;
   background: #18172a;
-  position: relative;
   justify-content: center;
-  
+  align-items: center;
+  padding: 50px 30px;
+
   p {
-    padding: 10px 30px;
     font-size: 16px;
     text-align: justify;
     color: #fff;
 
-    a{
-    padding-left: 5px;
-    text-decoration: none;
-    color: #0049b7;
-    font-weight: bold;
-  }
-
+    a {
+      padding-left: 5px;
+      text-decoration: none;
+      color: #0049b7;
+      font-weight: bold;
+    }
   }
 `;
-
