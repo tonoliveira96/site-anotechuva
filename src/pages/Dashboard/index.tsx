@@ -4,7 +4,7 @@ import Celular from '../../assets/celular-front.png';
 
 import GooglePlay from '../../assets/google-play.png';
 
-// import { FiArrowRight, FiInstagram } from 'react-icons/fi';
+import { FiInstagram, FiFacebook } from 'react-icons/fi';
 // import { Link } from 'react-router-dom';
 // import api from '../../services/api';
 
@@ -43,13 +43,18 @@ const Dashboard: React.FC = () => {
       <AboutMe>
         <h2>Sobre</h2>
         <p>
-          Lorem Ipsum é simplesmente um texto fictício da indústria de impressão
-          e composição. Lorem Ipsum tem sido o texto fictício padrão da
-          indústria desde os anos 1500, quando um impressor desconhecido pegou
-          uma galé do tipo e embaralhou para fazer um livro de amostra de tipos.
+          ANOTE CHUVA é um aplicativo gratuito, foi desenvolvido com objetivo de
+          facilitar a anotação de precipitação de chuvas em um determinado local,
+          usando um pluviômetro o usuário diariamente realiza as medições e
+          cadastrar as informações alimentando assim uma base dados.
         </p>
       </AboutMe>
       <Footer>
+        <div>
+          <FiInstagram size={20} color='#fff'/>
+          <FiFacebook size={20} color='#fff'/>
+        </div>
+        <p>E-mail: contato@anotechuva.com</p>
         <p>
           Desenvolvido por{' '}
           <a href="https://www.linkedin.com/in/tonoliveira96/" target="blank">

@@ -177,7 +177,8 @@ export const Contact = styled.div`
 `;
 
 export const Footer = styled.div`
-  flex: 1;
+  display: flex;
+  flex-direction:column;
   background: #18172a;
   justify-content: center;
   align-items: center;
@@ -195,4 +196,6 @@ export const Footer = styled.div`
       font-weight: bold;
     }
   }
+  
+  
 `;
