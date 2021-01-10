@@ -16,9 +16,28 @@ import {
   AboutMe,
   Footer,
 } from './styles';
+import { animated, useSpring } from 'react-spring';
 
 const Dashboard: React.FC = () => {
   //inicia a renderização em tela
+  const props = useSpring({
+    opacity: 1,
+    delay: 500,
+    transform: 'translateX(0)',
+    from: {
+      opacity: 0,
+      transform: 'translateX(-400px)',
+    },
+  });
+  const props2 = useSpring({
+    opacity: 1,
+    delay: 700,
+    transform: 'translateX(0)',
+    from: {
+      opacity: 0,
+      transform: 'translateX(400px)',
+    },
+  });
   return (
     <>
       <Title>
@@ -31,12 +50,16 @@ const Dashboard: React.FC = () => {
 
       <HeaderSite>
         <ContainerApp>
-          <img src={Celular} alt="Celular" />
+          <animated.div style={props}>
+            <img src={Celular} alt="Celular" />
+          </animated.div>
         </ContainerApp>
 
         <ContainerDownload>
-          <span>Download disponível em breve</span>
-          <img src={GooglePlay} alt="GooglePlay" />
+          <animated.div style={props2}>
+            <span>Download disponível em breve</span>
+            <img src={GooglePlay} alt="GooglePlay" />
+          </animated.div>
         </ContainerDownload>
       </HeaderSite>
 
@@ -44,20 +67,21 @@ const Dashboard: React.FC = () => {
         <h2>Sobre</h2>
         <p>
           ANOTE CHUVA é uma aplicação gratuita, desenvolvida com objetivo de
-          facilitar o registro de precipitação de chuvas em um determinado local.
-          Usando um pluviômetro o usuário diariamente realiza as medições e
-          cadastrar as informações alimentando assim uma base de dados unificada.
+          facilitar o registro de precipitação de chuvas em um determinado
+          local. Usando um pluviômetro o usuário diariamente realiza as medições
+          e cadastrar as informações alimentando assim uma base de dados
+          unificada.
         </p>
       </AboutMe>
-      
+
       <Footer>
         <div>
-          <FiInstagram size={24} color='#fff'/>
-          <FiFacebook size={24} color='#fff'/>
+          <FiInstagram size={24} color="#fff" />
+          <FiFacebook size={24} color="#fff" />
         </div>
         <p>E-mail: contato@anotechuva.com</p>
         <p>
-        Está sendo Desenvolvido por{' '}
+          Está sendo Desenvolvido por{' '}
           <a href="https://www.linkedin.com/in/tonoliveira96/" target="blank">
             {' '}
             Everton Oliveira

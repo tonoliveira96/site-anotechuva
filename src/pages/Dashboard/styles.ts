@@ -19,7 +19,6 @@ export const Title = styled.h1`
     color: #0049b7;
   }
 
-
   a {
     text-decoration: none;
     padding: 12px 24px;
@@ -57,8 +56,10 @@ export const HeaderSite = styled.div`
 export const ContainerApp = styled.div`
   display: flex;
   margin-left: auto;
+  width: 50%;
   justify-content: center;
   padding-top: 70px;
+
 
   img {
     height: 500px;
@@ -67,21 +68,25 @@ export const ContainerApp = styled.div`
 
 export const ContainerDownload = styled.div`
   display: flex;
-  margin-left: auto;
   width: 50%;
+  margin-left: auto;
+  padding-top: 70px;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
-  background: #ccd5f2;
-  padding-top: 50px;
+ 
+  div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    span {
+      font-size: 24px;
+      font-weight: bold;
+    }
 
-  span {
-    font-size: 24px;
-    font-weight: bold;
-  }
-
-  img {
-    width: 200px;
+    img {
+      width: 200px;
+    }
   }
 `;
 
@@ -148,7 +153,7 @@ export const Skills = styled.div`
 export const Footer = styled.div`
   display: flex;
   width: 100%;
-  flex-direction:column;
+  flex-direction: column;
   background: #18172a;
   justify-content: center;
   align-items: center;
@@ -166,6 +171,4 @@ export const Footer = styled.div`
       font-weight: bold;
     }
   }
-  
-  
 `;
