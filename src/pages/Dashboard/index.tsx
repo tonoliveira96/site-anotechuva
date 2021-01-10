@@ -26,7 +26,7 @@ const Dashboard: React.FC = () => {
           <span>ANOTE</span>CHUVA
         </p>
 
-        <a href="/">Entrar</a>
+        <a href="/login">Entrar</a>
       </Title>
 
       <HeaderSite>
@@ -43,20 +43,20 @@ const Dashboard: React.FC = () => {
       <AboutMe>
         <h2>Sobre</h2>
         <p>
-          ANOTE CHUVA é um aplicativo gratuito, foi desenvolvido com objetivo de
-          facilitar a anotação de precipitação de chuvas em um determinado local,
-          usando um pluviômetro o usuário diariamente realiza as medições e
-          cadastrar as informações alimentando assim uma base dados.
+          ANOTE CHUVA é uma aplicação gratuita, desenvolvida com objetivo de
+          facilitar a anotação de precipitação de chuvas em um determinado local.
+          Ssando um pluviômetro o usuário diariamente realiza as medições e
+          cadastrar as informações alimentando assim uma base dados unificada.
         </p>
       </AboutMe>
       <Footer>
         <div>
-          <FiInstagram size={20} color='#fff'/>
-          <FiFacebook size={20} color='#fff'/>
+          <FiInstagram size={24} color='#fff'/>
+          <FiFacebook size={24} color='#fff'/>
         </div>
         <p>E-mail: contato@anotechuva.com</p>
         <p>
-          Desenvolvido por{' '}
+        Está sendo Desenvolvido por{' '}
           <a href="https://www.linkedin.com/in/tonoliveira96/" target="blank">
             {' '}
             Everton Oliveira

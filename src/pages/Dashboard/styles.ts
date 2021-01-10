@@ -3,7 +3,7 @@ import { shade } from 'polished';
 
 export const Title = styled.h1`
   display: flex;
-  width: 100vw;
+  width: 100%;
   font-size: 42px;
   font-weight: 800;
   color: #18172a;
@@ -42,7 +42,7 @@ export const Title = styled.h1`
 
 export const HeaderSite = styled.div`
   display: flex;
-  width: 100vw;
+  width: 100%;
   background: #ccd5f2;
 
   @media (max-width: 640px) {
@@ -86,8 +86,10 @@ export const ContainerDownload = styled.div`
 `;
 
 export const AboutMe = styled.div`
-  flex: 1;
-  width: 100vw;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
   background: #fff;
   position: relative;
   padding: 30px 30px;
@@ -98,6 +100,7 @@ export const AboutMe = styled.div`
 
   p {
     display: flex;
+    max-width: 980px;
     font-size: 16px;
     text-align: justify;
   }
@@ -142,47 +145,14 @@ export const Skills = styled.div`
   }
 `;
 
-export const Contact = styled.div`
-  background: #3a3a3a;
-  height: 300px;
-
-  h2 {
-    color: #fff;
-  }
-
-  div {
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-
-    a {
-      text-decoration: none;
-    }
-
-    p {
-      font-size: 18px;
-      color: #f0f0f5;
-      margin-top: 4px;
-      padding: 5px;
-    }
-  }
-  svg {
-    margin-left: auto;
-    color: #fff;
-    transition: color 0.2s;
-  }
-  &hover {
-    color: ${shade(0.8, '#fff')};
-  }
-`;
-
 export const Footer = styled.div`
   display: flex;
+  width: 100%;
   flex-direction:column;
   background: #18172a;
   justify-content: center;
   align-items: center;
-  padding: 50px 30px;
+  padding: 24px 30px;
 
   p {
     font-size: 16px;
@@ -192,7 +162,7 @@ export const Footer = styled.div`
     a {
       padding-left: 5px;
       text-decoration: none;
-      color: #0049b7;
+      color: #25fbe0;
       font-weight: bold;
     }
   }
