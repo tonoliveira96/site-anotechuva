@@ -60,7 +60,6 @@ export const ContainerApp = styled.div`
   justify-content: center;
   padding-top: 70px;
 
-
   img {
     height: 500px;
   }
@@ -73,7 +72,7 @@ export const ContainerDownload = styled.div`
   padding-top: 70px;
   align-items: center;
   justify-content: center;
- 
+
   div {
     display: flex;
     align-items: center;
@@ -147,6 +146,47 @@ export const Skills = styled.div`
     flex-direction: column;
     display: flex;
     flex: 1;
+  }
+`;
+
+export const Content = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background: #fff;
+
+  div.image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+    img {
+      width: 400px;
+      height: 400px;
+    }
+  }
+
+  div.info {
+    display: flex;
+    flex-direction: column;
+    background: #f0f0f5;
+    padding-bottom: 18px;
+    height: 100%;
+  }
+
+  @media (max-width: 720px) {
+    display: flex;
+    flex-direction: column;
+   
+
+    div {
+      display: flex;
+      width: 100%;
+      padding: 8px 30px;
+    }
   }
 `;
 

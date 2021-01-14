@@ -1,12 +1,12 @@
 import React from 'react';
 
 import Celular from '../../assets/celular-front.png';
+import Banner01 from '../../assets/banner01.png';
+// import Banner02 from '../../assets/banner02.png';
 
 import GooglePlay from '../../assets/google-play.png';
 
 import { FiInstagram, FiFacebook } from 'react-icons/fi';
-// import { Link } from 'react-router-dom';
-// import api from '../../services/api';
 
 import {
   Title,
@@ -14,13 +14,14 @@ import {
   ContainerApp,
   ContainerDownload,
   AboutMe,
+  Content,
   Footer,
 } from './styles';
 import { animated, useSpring } from 'react-spring';
 
 const Dashboard: React.FC = () => {
   //inicia a renderização em tela
-  const props = useSpring({
+  const transitionsLeftToRight = useSpring({
     opacity: 1,
     delay: 500,
     transform: 'translateX(0)',
@@ -29,7 +30,7 @@ const Dashboard: React.FC = () => {
       transform: 'translateX(-400px)',
     },
   });
-  const props2 = useSpring({
+  const transitionsRightToLeft = useSpring({
     opacity: 1,
     delay: 700,
     transform: 'translateX(0)',
@@ -50,13 +51,13 @@ const Dashboard: React.FC = () => {
 
       <HeaderSite>
         <ContainerApp>
-          <animated.div style={props}>
+          <animated.div style={transitionsLeftToRight}>
             <img src={Celular} alt="Celular" />
           </animated.div>
         </ContainerApp>
 
         <ContainerDownload>
-          <animated.div style={props2}>
+          <animated.div style={transitionsRightToLeft}>
             <span>Download disponível em breve</span>
             <img src={GooglePlay} alt="GooglePlay" />
           </animated.div>
@@ -73,7 +74,34 @@ const Dashboard: React.FC = () => {
           unificada.
         </p>
       </AboutMe>
-
+      <hr />
+      <Content>
+     
+        <animated.div style={transitionsLeftToRight} className="image">
+          <img src={Banner01} alt="banner01" />
+        </animated.div>
+        
+        <animated.div style={transitionsRightToLeft} className="info">
+          <h2>Conectividade</h2>
+          <p>
+            Acesse seu dados de chuvas já cadastrados ou cadastre uma nova precipitação de
+            chuvas de qualquer lugar e a qualquer momento, no celular, tablet ou
+            computador. Basta ter acesso a internet.
+          </p>
+        </animated.div>
+      </Content>
+      {/* <Content>
+        <animated.div style={transitionsLeftToRight} className="info">
+          <h2>Relatórios</h2>
+          <p>
+            Tenha acesso a gráficos com indicadores das chuvas que você
+            cadastrou
+          </p>
+        </animated.div>
+        <animated.div style={transitionsRightToLeft}>
+          <img src={Banner02} alt="banner01" />
+        </animated.div>
+      </Content> */}
       <Footer>
         <div>
           <FiInstagram size={24} color="#fff" />
