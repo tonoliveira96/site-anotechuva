@@ -17,13 +17,13 @@ export default createGlobalStyle`
     font: 16px Roboto, sans-serif;
 
     #root{
-    flex:1;
+      flex:1;
 
-    div h2{
+    /* div h2{
       width: 100%;
       text-align: center;
       padding: 10px 0;
-    }
+    } */
 
   }
 

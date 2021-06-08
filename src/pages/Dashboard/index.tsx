@@ -2,7 +2,7 @@ import React from 'react';
 
 import Celular from '../../assets/celular-front.png';
 import Banner01 from '../../assets/banner01.png';
-// import Banner02 from '../../assets/banner02.png';
+import Banner02 from '../../assets/banner02.png';
 
 import GooglePlay from '../../assets/google-play.png';
 
@@ -76,32 +76,33 @@ const Dashboard: React.FC = () => {
       </AboutMe>
       <hr />
       <Content>
-     
-        <animated.div style={transitionsLeftToRight} className="image">
+        <div className="image">
           <img src={Banner01} alt="banner01" />
-        </animated.div>
-        
-        <animated.div style={transitionsRightToLeft} className="info">
+        </div>
+
+        <div className="info">
           <h2>Conectividade</h2>
           <p>
-            Acesse seu dados de chuvas já cadastrados ou cadastre uma nova precipitação de
-            chuvas de qualquer lugar e a qualquer momento, no celular, tablet ou
-            computador. Basta ter acesso a internet.
+            Acesse seu dados de chuvas já cadastrados ou cadastre uma nova
+            precipitação de chuvas de qualquer lugar e a qualquer momento, no
+            celular, tablet ou computador. Basta ter acesso a internet.
           </p>
-        </animated.div>
+        </div>
+
       </Content>
-      {/* <Content>
-        <animated.div style={transitionsLeftToRight} className="info">
+      <Content>
+        <div className="info">
           <h2>Relatórios</h2>
           <p>
             Tenha acesso a gráficos com indicadores das chuvas que você
-            cadastrou
+            cadastrou.
           </p>
-        </animated.div>
-        <animated.div style={transitionsRightToLeft}>
-          <img src={Banner02} alt="banner01" />
-        </animated.div>
-      </Content> */}
+        </div>
+        <div className="image">
+          <img src={Banner02} alt="banner02" />
+        </div>
+      </Content>
+
       <Footer>
         <div>
           <FiInstagram size={24} color="#fff" />

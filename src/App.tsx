@@ -7,10 +7,11 @@ import Routes from './routes';
 
 const App: React.FC = () => (
   <>
+  <GlobalStyles />
     <BrowserRouter>
       <Routes />
     </BrowserRouter>
-    <GlobalStyles />
+    
   </>
 );
 

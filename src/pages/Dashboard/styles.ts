@@ -47,17 +47,19 @@ export const HeaderSite = styled.div`
   @media (max-width: 640px) {
     flex-direction: column;
 
-    div {
+    div{
       width: 100%;
     }
+
   }
 `;
 
 export const ContainerApp = styled.div`
   display: flex;
-  margin-left: auto;
+  /* margin-left: auto; */
   width: 50%;
   justify-content: center;
+  align-items: center;
   padding-top: 70px;
 
   img {
@@ -68,7 +70,7 @@ export const ContainerApp = styled.div`
 export const ContainerDownload = styled.div`
   display: flex;
   width: 50%;
-  margin-left: auto;
+  /* margin-left: auto; */
   padding-top: 70px;
   align-items: center;
   justify-content: center;
@@ -110,49 +112,10 @@ export const AboutMe = styled.div`
   }
 `;
 
-export const Skills = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-
-  div {
-    margin: 0 16px;
-    flex: 1;
-    padding: 20px 10px 10px 10px;
-
-    strong {
-      font-size: 16px;
-      text-align: center;
-      margin-left: 120px;
-    }
-
-    img {
-      margin-left: auto;
-      margin-right: auto;
-      width: 300px;
-      height: 200px;
-      margin: 10px;
-      border-radius: 5px;
-    }
-
-    p {
-      margin: 10px;
-      text-align: justify;
-      font-size: 14px;
-    }
-  }
-
-  @media (max-width: 960px) {
-    flex-direction: column;
-    display: flex;
-    flex: 1;
-  }
-`;
-
 export const Content = styled.div`
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   width: 100%;
   background: #fff;
@@ -162,6 +125,7 @@ export const Content = styled.div`
     justify-content: center;
     align-items: center;
     height: 100%;
+    
 
     img {
       width: 400px;
@@ -172,19 +136,20 @@ export const Content = styled.div`
   div.info {
     display: flex;
     flex-direction: column;
+    max-width: 50%;
+    text-align: justify;
     background: #f0f0f5;
-    padding-bottom: 18px;
+    padding: 18px;
     height: 100%;
   }
 
   @media (max-width: 720px) {
     display: flex;
     flex-direction: column;
-   
 
-    div {
+    div.info {
       display: flex;
-      width: 100%;
+      max-width: 100%;
       padding: 8px 30px;
     }
   }
