@@ -47,10 +47,9 @@ export const HeaderSite = styled.div`
   @media (max-width: 640px) {
     flex-direction: column;
 
-    div{
+    div {
       width: 100%;
     }
-
   }
 `;
 
@@ -70,7 +69,6 @@ export const ContainerApp = styled.div`
 export const ContainerDownload = styled.div`
   display: flex;
   width: 50%;
-  /* margin-left: auto; */
   padding-top: 70px;
   align-items: center;
   justify-content: center;
@@ -114,44 +112,69 @@ export const AboutMe = styled.div`
 
 export const Content = styled.div`
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
   width: 100%;
   background: #fff;
 
-  div.image {
+  div#row {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: row;
     height: 100%;
-    
 
-    img {
-      width: 400px;
-      height: 400px;
+    div.image {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      width: 50%;
+      img {
+        width: 350px;
+        height: 350px;
+      }
     }
-  }
 
-  div.info {
-    display: flex;
-    flex-direction: column;
-    max-width: 50%;
-    text-align: justify;
-    background: #f0f0f5;
-    padding: 18px;
-    height: 100%;
+    div.info {
+      display: flex;
+      flex-direction: column;
+      text-align: justify;
+      background: #f0f0f5;
+      padding: 18px;
+      max-width: 520px;
+      flex: 1;
+
+      h2 {
+        margin-right: auto;
+        margin-left: auto;
+      }
+    }
   }
 
   @media (max-width: 720px) {
     display: flex;
     flex-direction: column;
 
+    div#row {
+      display: flex;
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+
     div.info {
       display: flex;
-      max-width: 100%;
+      width: 100%;
       padding: 8px 30px;
+      order:2;
     }
+
+    div.image {
+      display: flex;
+      height: 100%;
+      width: 100%;
+      order: 3;
+    }
+    }
+
   }
 `;
 

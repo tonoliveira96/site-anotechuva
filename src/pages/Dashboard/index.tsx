@@ -76,33 +76,34 @@ const Dashboard: React.FC = () => {
       </AboutMe>
       <hr />
       <Content>
-        <div className="image">
-          <img src={Banner01} alt="banner01" />
+        <div id="row">
+          <div className="image">
+            <img src={Banner01} alt="banner01" />
+          </div>
+
+          <div className="info">
+            <h2>Conectividade</h2>
+            <p>
+              Acesse seu dados de chuvas já cadastrados ou cadastre uma nova
+              precipitação de chuvas de qualquer lugar e a qualquer momento, no
+              celular, tablet ou computador. Basta ter acesso a internet.
+            </p>
+          </div>
         </div>
 
-        <div className="info">
-          <h2>Conectividade</h2>
-          <p>
-            Acesse seu dados de chuvas já cadastrados ou cadastre uma nova
-            precipitação de chuvas de qualquer lugar e a qualquer momento, no
-            celular, tablet ou computador. Basta ter acesso a internet.
-          </p>
+        <div id="row">
+          <div className="info">
+            <h2>Relatórios</h2>
+            <p>
+              Tenha acesso a gráficos com indicadores das chuvas que você
+              cadastrou.
+            </p>
+          </div>
+          <div className="image">
+            <img src={Banner02} alt="banner02" />
+          </div>
         </div>
-
       </Content>
-      <Content>
-        <div className="info">
-          <h2>Relatórios</h2>
-          <p>
-            Tenha acesso a gráficos com indicadores das chuvas que você
-            cadastrou.
-          </p>
-        </div>
-        <div className="image">
-          <img src={Banner02} alt="banner02" />
-        </div>
-      </Content>
-
       <Footer>
         <div>
           <FiInstagram size={24} color="#fff" />
