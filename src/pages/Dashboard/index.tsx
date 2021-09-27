@@ -46,7 +46,7 @@ const Dashboard: React.FC = () => {
           <span>ANOTE</span>CHUVA
         </p>
 
-        <a href="/login">Entrar</a>
+        <a href="https://app.anotechuva.com">Acessar</a>
       </Title>
 
       <HeaderSite>
