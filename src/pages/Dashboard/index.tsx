@@ -117,6 +117,7 @@ const Dashboard: React.FC = () => {
             Everton Oliveira
           </a>
         </p>
+        <a href="/privacy" className="privacy">Políticas de Privacidade</a>
       </Footer>
     </>
   );

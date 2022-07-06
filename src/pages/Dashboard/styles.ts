@@ -160,21 +160,20 @@ export const Content = styled.div`
       flex-direction: column;
       align-items: center;
 
-    div.info {
-      display: flex;
-      width: 100%;
-      padding: 8px 30px;
-      order:2;
-    }
+      div.info {
+        display: flex;
+        width: 100%;
+        padding: 8px 30px;
+        order: 2;
+      }
 
-    div.image {
-      display: flex;
-      height: 100%;
-      width: 100%;
-      order: 3;
+      div.image {
+        display: flex;
+        height: 100%;
+        width: 100%;
+        order: 3;
+      }
     }
-    }
-
   }
 `;
 
@@ -198,5 +197,13 @@ export const Footer = styled.div`
       color: #25fbe0;
       font-weight: bold;
     }
+  }
+
+  .privacy {
+    margin-top: 24px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    color: #f2f2ff;
   }
 `;
