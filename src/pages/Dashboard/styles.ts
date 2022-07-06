@@ -98,6 +98,8 @@ export const AboutMe = styled.div`
   position: relative;
   padding: 30px 30px;
   z-index: 2;
+  font-family: 'Roboto', sans-serif;
+  
   h2 {
     color: #18172a;
   }

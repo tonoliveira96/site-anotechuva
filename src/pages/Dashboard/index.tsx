@@ -1,13 +1,9 @@
 import React from 'react';
-
 import Celular from '../../assets/celular-front.png';
 import Banner01 from '../../assets/banner01.png';
 import Banner02 from '../../assets/banner02.png';
-
 import GooglePlay from '../../assets/google-play.png';
-
 import { FiInstagram, FiFacebook } from 'react-icons/fi';
-
 import {
   Title,
   HeaderSite,
