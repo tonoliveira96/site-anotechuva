@@ -79,7 +79,7 @@ export const ContainerDownload = styled.div`
     justify-content: center;
     flex-direction: column;
     span {
-      font-size: 24px;
+      font-size: 2rem;
       font-weight: bold;
     }
 
@@ -107,7 +107,7 @@ export const AboutMe = styled.div`
   p {
     display: flex;
     max-width: 980px;
-    font-size: 16px;
+    font-size: 1rem;
     text-align: justify;
   }
 `;
@@ -189,7 +189,7 @@ export const Footer = styled.div`
   padding: 24px 30px;
 
   p {
-    font-size: 16px;
+    font-size: 1rem;
     text-align: justify;
     color: #fff;
 
@@ -205,7 +205,7 @@ export const Footer = styled.div`
     margin-top: 24px;
     text-decoration: none;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 1.25rem;
     color: #f2f2ff;
   }
 `;
