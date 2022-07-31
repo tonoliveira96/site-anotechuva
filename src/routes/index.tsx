@@ -6,7 +6,7 @@ import Privacy from '../pages/Privacy';
 const Routes: React.FC = () => (
   <Switch>
     <Route path="/" exact component={Dashboard} />
-    <Route path="/privacy" exact component={Privacy} />
+    <Route path="/privacy" component={Privacy} />
   </Switch>
 );
 
