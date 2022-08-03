@@ -54,8 +54,14 @@ const Dashboard: React.FC = () => {
 
         <ContainerDownload>
           <animated.div style={transitionsRightToLeft}>
-            <span>Download disponível em breve</span>
-            <img src={GooglePlay} alt="GooglePlay" />
+            <span>Download disponível</span>
+            <a
+              href="https://play.google.com/store/apps/details?id=com.tonoliveiradev.anotechuva"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src={GooglePlay} alt="GooglePlay" />
+            </a>
           </animated.div>
         </ContainerDownload>
       </HeaderSite>
@@ -113,7 +119,9 @@ const Dashboard: React.FC = () => {
             Everton Oliveira
           </a>
         </p>
-        <a href="/privacy" className="privacy">Políticas de Privacidade</a>
+        <a href="/privacy" className="privacy">
+          Políticas de Privacidade
+        </a>
       </Footer>
     </>
   );
